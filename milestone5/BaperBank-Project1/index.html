@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Functional Baap Er Bank</title>
+</head>
+<body>
+  <header>
+    <h1 class="text-5xl text-center mt-4">Functional<span class="text-red-500 font-medium"> Baap-Er-Bank</span></h1>
+    <main>
+      <!-- Blance and Tranction Summary -->
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 w-3/4  mx-auto">
+                <div class="bg-yellow-400 p-8 text-white rounded-lg">
+                  <h4 class="text-3xl">Deposit</h4>  
+                  <h2 id="diposite-total" class="text-5xl font-medium">$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-red-400 p-8 text-white rounded-lg">
+                  <h4 class="text-3xl">Withdrow</h4>  
+                  <h2 id="diposite-total" class="text-5xl font-medium">$<span id="withdrow-total">00</span></h2>
+                </div>
+                <div class="bg-blue-400 p-8 text-white rounded-lg">
+                  <h4 class="text-3xl">Blance</h4>  
+                  <h2 id="diposite-total" class="text-5xl font-medium">$<span id="deposit-blance">1240</span></h2>
+                </div>
+               
+            </div>
+        </section>
+        <!-- Deposit And Withdroe section -->
+       <section class="mt-8 w-3/4 mx-auto">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-violet-400 p-8 rounded-lg">
+           <h3 class="text-4xl text-white mb-4">Your Deposit</h3>
+           <input id="deposit-feild" class="w-3/4 px-4 py-3 rounded block" type="text" placeholder="$ Amount you Want to diposit">
+           <button id="btn-deposit" class="bg-blue-800 px-6 py-2 text-white font-medium mt-4 rounded-lg hover:bg-sky-600">Deposit</button>
+          </div>
+          <div class="bg-amber-400 p-8 rounded">
+           <h3 class="text-4xl text-white mb-4">Your Withdrow</h3>
+           <input id="withdrow-feild" class="w-3/4 px-4 py-3 rounded block" type="text" placeholder="$ Amount you Want to Withdrow">
+           <button id="btn-withdrow" class="bg-blue-800 px-6 py-2 text-white font-medium mt-4 rounded-lg hover:bg-sky-600">Withdrow</button>
+          </div>
+         </div>
+       </section>
+    </main>
+  </header>
+  <script src="script.js"></script>
+</body>
+</html>
